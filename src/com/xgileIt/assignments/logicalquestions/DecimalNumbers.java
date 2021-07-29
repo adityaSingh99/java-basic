@@ -1,8 +1,8 @@
-package com.Assignment;
+package com.xgileIt.assignments.logicalquestions;
 
 import java.util.Scanner;
 
-public class Assingment1 {
+public class DecimalNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a Decimal number");

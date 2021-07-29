@@ -1,4 +1,4 @@
-package com.Assignment;
+package com.xgileIt.assignments.logicalquestions;
 
 import java.util.Scanner;
 
