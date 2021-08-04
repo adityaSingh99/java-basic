@@ -1,9 +1,9 @@
-/*package com.xgileIt.assignments.logicalquestions;
+package com.xgileIt.assignments.logicalquestions;
 
 import java.util.Scanner;
 
 public class Numberof_DaysLived {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Local DATE.now
 
         Scanner forDOB = new Scanner(System.in);
         System.out.println("Please enter the day you were born");
@@ -30,7 +30,7 @@ public class Numberof_DaysLived {
 
         int age = (presentYear - 1) - year;
         int leapYears_lived = Math.floorDiv(age, 4);
-        int numberofDaysLived ;
+        int numberofDaysLived =0 ;
 
         if (day == presentDay && month == presentMonth) {
             numberofDaysLived = (age * 365) + leapYears_lived + 365;
@@ -47,4 +47,4 @@ public class Numberof_DaysLived {
         System.out.println("Your age is "+age);
         System.out.println("The total number of days you have lived is "+numberofDaysLived);
     }
-}*/
+}
