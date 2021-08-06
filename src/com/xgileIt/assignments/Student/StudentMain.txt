@@ -1,0 +1,24 @@
+To print all Student Details:
+StudentsInfo{studentId=1, firstName='Aditya', lastName='Singh', age=0, mobileNumber=700047114, email='adi2singh@gmail.com', grade=C}
+StudentsInfo{studentId=2, firstName='Abhijeet', lastName='Singh', age=0, mobileNumber=12345678, email='abji123@abc', grade=A}
+StudentsInfo{studentId=3, firstName='Vishal', lastName='singh', age=0, mobileNumber=741852963, email='vishal@abc', grade=A}
+StudentsInfo{studentId=4, firstName='Shivam', lastName='singh', age=0, mobileNumber=852933789, email='shivam@abc', grade=A}
+StudentsInfo{studentId=5, firstName='Tushar', lastName='singh', age=0, mobileNumber=789123456, email='tushar@abc', grade=A}
+
+To print all Course Details:
+CourseInformation{courseId=1, courseDuration=2, courseName='MCA', subject=[JAvA]}
+CourseInformation{courseId=2, courseDuration=2, courseName='MBA', subject=[Managemet]}
+CourseInformation{courseId=3, courseDuration=3, courseName='B.com', subject=[Charts]}
+CourseInformation{courseId=4, courseDuration=3, courseName='BBA', subject=[commerce]}
+CourseInformation{courseId=5, courseDuration=5, courseName='MBBS', subject=[BIOLOGY]}
+
+To print all Registartion Details:
+{StudentsInfo{studentId=1, firstName='Aditya', lastName='Singh', age=0, mobileNumber=700047114, email='adi2singh@gmail.com', grade=C}=CourseInformation{courseId=1, courseDuration=2, courseName='MCA', subject=[JAvA]}, StudentsInfo{studentId=2, firstName='Abhijeet', lastName='Singh', age=0, mobileNumber=12345678, email='abji123@abc', grade=A}=CourseInformation{courseId=2, courseDuration=2, courseName='MBA', subject=[Managemet]}, StudentsInfo{studentId=3, firstName='Vishal', lastName='singh', age=0, mobileNumber=741852963, email='vishal@abc', grade=A}=CourseInformation{courseId=3, courseDuration=3, courseName='B.com', subject=[Charts]}, StudentsInfo{studentId=4, firstName='Shivam', lastName='singh', age=0, mobileNumber=852933789, email='shivam@abc', grade=A}=CourseInformation{courseId=4, courseDuration=3, courseName='BBA', subject=[commerce]}, StudentsInfo{studentId=5, firstName='Tushar', lastName='singh', age=0, mobileNumber=789123456, email='tushar@abc', grade=A}=CourseInformation{courseId=5, courseDuration=5, courseName='MBBS', subject=[BIOLOGY]}}
+To print id 001 Course Details:
+StudentsInfo{studentId=1, firstName='Aditya', lastName='Singh', age=0, mobileNumber=700047114, email='adi2singh@gmail.com', grade=C}
+
+To print id 005 Course Details:
+StudentsInfo{studentId=2, firstName='Abhijeet', lastName='Singh', age=0, mobileNumber=12345678, email='abji123@abc', grade=A}
+
+To print id 1 & 3 Student Details:
+CourseInformation{courseId=1, courseDuration=2, courseName='MCA', subject=[JAvA]}CourseInformation{courseId=3, courseDuration=3, courseName='B.com', subject=[Charts]}

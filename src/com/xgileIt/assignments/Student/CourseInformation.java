@@ -4,36 +4,24 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-public class CourseInformation implements Serializable {
+public class CourseInformation  implements Serializable {
 
-    private  static  final long serialVersionUID = 1234L;
-        int courseId;
-        String courseName;
-        int courseDuration;
-        List<String> subjectName;
+    private static final long serialVersionUID = 123l;
+    int courseId;
+    int courseDuration;
+    String courseName;
+    List<String> subject;
 
-        public CourseInformation(int courseId,String courseName, int courseDuration,List<String>subjectName)
-        {
-            this.courseId= courseId;
-            this.courseDuration=courseDuration;
-            this.courseName= courseName;
-            this.subjectName=subjectName;
-        }
+    public CourseInformation(int courseId ,int courseDuration, String courseName ,List<String>subject)
+    {
+        this.courseId = courseId;
+        this.courseDuration = courseDuration;
+        this.courseName = courseName;
+        this.subject = subject;
+    }
 
     public int getCourseId() {
         return courseId;
-    }
-
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
-    }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
     }
 
     public int getCourseDuration() {
@@ -44,34 +32,40 @@ public class CourseInformation implements Serializable {
         this.courseDuration = courseDuration;
     }
 
-    public List<String> getSubjectName() {
-        return subjectName;
+    public String getCourseName() {
+        return courseName;
     }
 
-    public void setSubjectName(List<String> subjectName) {
-        this.subjectName = subjectName;
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public List<String> getSubject() {
+        return subject;
+    }
+
+    public void setSubject(List<String> subject) {
+        this.subject = subject;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof CourseInformation)) return false;
-        CourseInformation that = (CourseInformation) o;
-        return courseId == that.courseId;
+    public boolean equals(Object object1) {
+        CourseInformation courseInformation = (CourseInformation) object1;
+        return (courseId == courseInformation.courseId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(courseId);
+        return courseId;
     }
 
     @Override
     public String toString() {
         return "CourseInformation{" +
                 "courseId=" + courseId +
-                ", courseName='" + courseName + '\'' +
                 ", courseDuration=" + courseDuration +
-                ", subjectName=" + subjectName +
+                ", courseName='" + courseName + '\'' +
+                ", subject=" + subject +
                 '}';
     }
 }

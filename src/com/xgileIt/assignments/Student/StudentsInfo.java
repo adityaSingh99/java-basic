@@ -3,39 +3,25 @@ package com.xgileIt.assignments.Student;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class StudentInformation implements Serializable {
+public class StudentsInfo implements Serializable {
 
-    private static final long serialVersionUID = 123L;
-
-    int studentId ;
+    private static final long serialVersionUID = 456L;
+    int studentId;
     String firstName;
     String lastName;
     int age;
-    int mobileNO;
+    int mobileNumber;
     String email;
-    char gender;
     char grade;
 
-
-
-    public StudentInformation(int studentId, String firstName, String lastName, int age, String email, int mobileNO, char gender){
-        super();
-        this.studentId = studentId;
+    public StudentsInfo(int studentId, String firstName,String lastName,int mobileNumber,String email,char grade){
+        this.studentId =studentId;
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.lastName= lastName;
         this.age= age;
-        this.mobileNO= mobileNO;
-        this.gender= gender;
-        this.email= email;
-        this.grade=grade;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+        this.mobileNumber = mobileNumber;
+        this.email = email;
+        this.grade= grade;
     }
 
     public String getFirstName() {
@@ -62,12 +48,12 @@ public class StudentInformation implements Serializable {
         this.age = age;
     }
 
-    public int getMobileNO() {
-        return mobileNO;
+    public int getMobileNumber() {
+        return mobileNumber;
     }
 
-    public void setMobileNO(int mobileNO) {
-        this.mobileNO = mobileNO;
+    public void setMobileNumber(int mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
     public String getEmail() {
@@ -76,14 +62,6 @@ public class StudentInformation implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
     }
 
     public char getGrade() {
@@ -95,28 +73,25 @@ public class StudentInformation implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof StudentInformation)) return false;
-        StudentInformation that = (StudentInformation) o;
-        return getStudentId() == that.getStudentId();
+    public boolean equals(Object obj) {
+        StudentsInfo studentsInfo = (StudentsInfo) obj;
+        return (studentId == studentsInfo.studentId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getStudentId());
+        return studentId;
     }
 
     @Override
     public String toString() {
-        return "StudentInformation{" +
+        return "StudentsInfo{" +
                 "studentId=" + studentId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
-                ", mobileNO=" + mobileNO +
+                ", mobileNumber=" + mobileNumber +
                 ", email='" + email + '\'' +
-                ", gender=" + gender +
                 ", grade=" + grade +
                 '}';
     }
